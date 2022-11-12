@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*trabalhando o espaçamento interno*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap; /*consigo manipular as dimensões, se n tiver espaço, cai pra proxima linha*/
+    max-width: 1280px; /*limitar o contexto*/
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden; /*sem scroll vertical*/
+    overflow-x: hidden; /*sem scroll horizontal*/ /*ou só colocar overflow (sem x ou y)*/
+}
+
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo{
+    padding-top: 10px;
+    width: 50%;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.menu{
+    font-size: 14px;
+    padding-top: 30px; /*distancia de cima para baixo na pagina*/
+    width: 50%; /*do meio para o canto*/
+    text-align: right; /*faz com q seja necessariamente para o lado direito*/
+}
+
+.menu a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 35px;
+}
+
+section.sobre{
+    height: calc(100% - 200px); /*calculo para posicionar o sobre de forma correta*/
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: -500px;
+    right: -450px;
+    width: 1000px; /*quanto menor, mais para fora da tela*/
+    height: 1000px;
+    border-radius: 50%; /*para ficar um cículo*/
+    background-color: #006341;
+}
+
+.social-media{
+    position: absolute;
+    right: 440px;
+    top: 150px;
+}
+
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 20px; /*serve para os incones n ficarem grudados um no outro*/
+}
+
+.texto-sobre{
+    margin-top: 40px;
+}
+
+.texto-sobre h1{
+    font-size: 40px;
+}
+
+.texto-sobre p{
+    margin: 20px 0; /*o 0 serve pra ficar alinhado*/
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 700px; /*para não ultrapassar o limite e ficar o texto em baixo da imagem*/
+}
+
+.texto-sobre button{
+    border: 0;
+    background-color: #006341;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
